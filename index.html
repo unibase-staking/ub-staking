@@ -31,8 +31,8 @@ body{background:#07081A;color:#fff;font-family:var(--font);min-height:100vh;over
 nav{position:sticky;top:0;z-index:100;height:58px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 20px;background:rgba(5,5,12,0.88);backdrop-filter:blur(28px) saturate(1.4);border-bottom:1px solid rgba(108,71,255,0.18);box-shadow:0 1px 0 rgba(27,191,168,0.08),0 4px 24px rgba(0,0,0,0.4);}
 .nav-logo{display:flex;align-items:center;gap:6px;text-decoration:none;min-width:0;flex:0 1 auto;margin-right:auto;padding-right:4px;}
 .nav-logo img{width:20px;height:20px;border-radius:0;object-fit:contain;background:transparent;flex-shrink:0;}
-.nav-logo-text{font-size:15px;font-weight:800;letter-spacing:0.02em;color:#fff;white-space:nowrap;line-height:1;text-shadow:0 0 12px rgba(74,84,241,0.35);}
-.nav-logo-text span{background:none;-webkit-text-fill-color:#4A54F1;color:#4A54F1;text-shadow:0 0 10px rgba(74,84,241,0.55);}
+.nav-logo-text{font-size:16px;font-weight:800;letter-spacing:0.10em;color:#4A54F1;white-space:nowrap;line-height:1;text-shadow:none;}
+.nav-logo-text span{background:none;-webkit-text-fill-color:#4A54F1;color:#4A54F1;text-shadow:none;}
 .nav-links{display:flex;gap:2px;}
 .nav-link{display:flex;align-items:center;gap:4px;padding:5px 9px;border-radius:7px;font-size:10.5px;font-weight:500;color:var(--text2);text-decoration:none;transition:all .15s;cursor:pointer;background:none;border:none;}
 .nav-link:hover{color:#fff;background:rgba(255,255,255,0.06);}
@@ -212,7 +212,7 @@ footer{border-top:1px solid rgba(108,71,255,0.15);padding:14px 18px;display:flex
 .fade{animation:fadeUp .4s ease both;}
 .fade:nth-child(1){animation-delay:.05s}.fade:nth-child(2){animation-delay:.1s}.fade:nth-child(3){animation-delay:.15s}.fade:nth-child(4){animation-delay:.2s}
 @media(max-width:1100px){.grid-3{grid-template-columns:1fr}.grid-4{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.grid-2,.grid-4{grid-template-columns:1fr}nav{padding:0 12px;gap:6px}.nav-logo-text{font-size:13px;letter-spacing:0.01em}.nav-logo{padding-right:2px}main{padding:14px 12px 40px}.apr-right{display:none}.apr-value{font-size:26px}.nav-links{display:none}}
+@media(max-width:700px){.grid-2,.grid-4{grid-template-columns:1fr}nav{padding:0 12px;gap:6px}.nav-logo-text{font-size:14px;letter-spacing:0.08em}.nav-logo{padding-right:2px}main{padding:14px 12px 40px}.apr-right{display:none}.apr-value{font-size:26px}.nav-links{display:none}}
 
 
 
@@ -252,9 +252,9 @@ to{transform:rotate(360deg) translateX(0)}}
 .epoch-node-conn{flex:1;height:2px;background:var(--border);margin:15px -2px 0;border-radius:2px;}
 .epoch-node-conn.done{background:linear-gradient(90deg,var(--teal),var(--blue));}
 .epoch-progress-wrap{margin-bottom:16px;}
-.epoch-progress-top{display:flex;justify-content:space-between;font-size:8px;color:var(--text3);margin-bottom:5px;}
-.epoch-progress{height:5px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;}
-.epoch-progress-fill{height:100%;border-radius:3px;background:var(--brand-grad);transition:width .6s ease;}
+.epoch-progress-top{display:flex;justify-content:space-between;font-size:11px;color:#fff;font-weight:700;margin-bottom:5px;}
+.epoch-progress{height:8px;background:rgba(74,84,241,0.20);border-radius:4px;overflow:hidden;border:1px solid rgba(139,146,255,0.40);}
+.epoch-progress-fill{height:100%;border-radius:4px;background:#4A54F1;box-shadow:0 0 10px rgba(74,84,241,0.75);transition:width .6s ease;}
 .epoch-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 .epoch-stat{background:rgba(255,255,255,0.02);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;}
 .epoch-stat-val{font-family:var(--mono);font-size:12.5px;font-weight:700;color:#fff;margin-bottom:3px;}
@@ -284,7 +284,7 @@ to{transform:rotate(360deg) translateX(0)}}
 .wallet-chip{display:flex;align-items:center;gap:8px;background:#050505;border:1px solid rgba(108,71,255,0.3);box-shadow:0 4px 24px rgba(108,71,255,0.15);border-radius:10px;padding:10px 13px;}
 .wallet-chip-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 6px var(--teal);flex-shrink:0;}
 .wallet-chip-addr{flex:1;font-family:var(--mono);font-size:9px;color:#fff;font-weight:600;}
-.wallet-chip-net{font-size:7px;font-weight:700;text-transform:uppercase;color:var(--text3);background:rgba(255,255,255,0.05);padding:3px 7px;border-radius:5px;flex-shrink:0;}
+.wallet-chip-net{font-size:9px;font-weight:700;text-transform:uppercase;color:#fff;background:rgba(74,84,241,0.28);padding:3px 7px;border-radius:5px;flex-shrink:0;}
 .nav-wallet-btn{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:10px;background:var(--brand-grad);border:none;color:#fff;font-size:9px;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0;box-shadow:0 3px 14px rgba(108,71,255,0.35);}
 .nav-wallet-btn:hover{filter:brightness(1.08);box-shadow:0 4px 20px rgba(108,71,255,0.55);transform:translateY(-1px);}
 .nav-wallet-btn.connected{background:var(--brand-grad);border:none;}
@@ -298,7 +298,7 @@ to{transform:rotate(360deg) translateX(0)}}
 .lb-row-inner{flex:1;min-width:0;}
 .lb-row-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;}
 .lb-bar-wrap{height:3px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;}
-.lb-bar-fill{height:100%;border-radius:2px;background:var(--brand-grad);}
+.lb-bar-fill{height:100%;border-radius:2px;background:#4A54F1;box-shadow:0 0 8px rgba(74,84,241,0.65);}
 .pf-dropdown{position:relative;display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.04);border:1px solid var(--border2);border-radius:9px;padding:6px 10px;color:var(--text2);pointer-events:none;}
 .pf-dropdown select{appearance:none;-webkit-appearance:none;background:none;border:none;color:#fff;font-size:8.5px;font-weight:700;font-family:var(--font);pointer-events:auto;cursor:pointer;padding-right:2px;}
 .pf-dropdown select option{background:#0a0a0a;color:#fff;}
@@ -913,7 +913,7 @@ body.light-mode #bgCanvas{background:
         <div class="analytics-bar">
           <span class="analytics-label">Commission Rate</span>
           <div class="analytics-right">
-            <div class="analytics-bar-wrap"><div class="analytics-bar-fill" style="width:40%;background:var(--blue);"></div></div>
+            <div class="analytics-bar-wrap"><div class="analytics-bar-fill" style="width:40%;background:#4A54F1;box-shadow:0 0 8px rgba(74,84,241,0.7);"></div></div>
             <span class="analytics-val">8.00%</span>
           </div>
         </div>
@@ -1015,7 +1015,7 @@ body.light-mode #bgCanvas{background:
 <footer>
   <div class="footer-logo">
     <img class="brand-logo-img" alt="UNIBASE"/>
-    <span style="font-size:8px;font-weight:700;letter-spacing:-0.01em;color:#fff;">UNI<span style="color:var(--teal);">BASE</span></span>
+    <span style="font-size:12px;font-weight:800;letter-spacing:0.10em;color:#4A54F1;">UNI<span style="color:#4A54F1;">BASE</span></span>
   </div>
   <div class="footer-links">
     <a href="#">Terms</a>
@@ -1664,7 +1664,7 @@ function toggleEpochRecap(){var d=document.getElementById('epochRecapDetail');d.
 
 function initLeaderboard(){
   var list=document.getElementById('leaderboardList'); if(!list) return;
-  var data=[{addr:'0x9F3a...6C21',share:35.2},{addr:'0x1B7e...44Aa',share:24.3},{addr:'0x6D02...F19b',share:18.9},{addr:'0x4C88...2E7d',share:12.2},{addr:'0xA015...9B3c',share:9.4}];
+  var data=[{addr:'0x1A94...C6E0',share:35.2},{addr:'0x7F3c...29B8',share:24.3},{addr:'0xC28e...D041',share:18.9},{addr:'0x5D16...A7F3',share:12.2},{addr:'0xE40b...18C5',share:9.4}];
   var ranks=['gold','silver','bronze','',''];
   var max=data[0].share;
   var h='';
@@ -1756,7 +1756,7 @@ document.addEventListener('DOMContentLoaded',function(){
       <div class="vp-bar"><div class="vp-bar-fill" style="width:5.2%;background:linear-gradient(90deg,#1BBFA8,#3D5FE0);"></div></div>
     </div>
     <div class="vp-description">
-      Operation Solo Staker is an independent non-custodial validator focused on reliable uptime, transparent operations, and slashing protection for UB stakers.
+      Operation Solo Staker is a leading proof-of-stake validator and staking infrastructure provider. Operating since 2023, they secure over $3B in assets across 40+ networks with enterprise-grade infrastructure and 24/7 monitoring.
     </div>
     <div class="vp-tags">
       <span class="vp-tag">Enterprise Grade</span>
